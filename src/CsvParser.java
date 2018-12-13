@@ -34,7 +34,7 @@ public class CsvParser {
 
             long elapsedTime = endTime - startTime;
 
-            System.out.println("Elapsed Time in seconds: " + elapsedTime/1000000000);
+            System.out.println("Elapsed Time in seconds: " + elapsedTime / 1000000000);
 
             System.out.println("\nAfter");
             for (int i = 0; i < 100; i++) {
