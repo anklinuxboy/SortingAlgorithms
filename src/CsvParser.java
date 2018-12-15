@@ -23,11 +23,11 @@ public class CsvParser {
 
             List<BlackFridayPojo> data = csvToBean.parse();
 
-            InsertionSort insertionSort = new InsertionSort();
-            SelectionSort selectionSort = new SelectionSort();
+            InsertionSort<BlackFridayPojo> insertionSort = new InsertionSort<>();
+            SelectionSort<BlackFridayPojo> selectionSort = new SelectionSort<>();
 
             long startTime = System.nanoTime();
-            selectionSort.sort(data);
+            insertionSort.sort(data);
             long endTime = System.nanoTime();
 
             long elapsedTime = endTime - startTime;

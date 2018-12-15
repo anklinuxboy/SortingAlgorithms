@@ -1,10 +1,8 @@
 package sortingalgorithms;
 
-import pojos.BlackFridayPojo;
-
 import java.util.List;
 
-public interface Sort {
+public interface Sort<T> {
 
-    void sort(List<BlackFridayPojo> items);
+    void sort(List<T> items);
 }
