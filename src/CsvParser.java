@@ -11,7 +11,7 @@ import java.util.List;
 
 public class CsvParser {
 
-    private static String BLACK_FRIDAY_CSV_LOCATION = "/Users/ankitsharma/Documents/code/sorting/BlackFriday.csv";
+    private static String BLACK_FRIDAY_CSV_LOCATION = "BlackFriday.csv";
 
     public static void main(String[] args) throws IOException {
         try (Reader reader = Files.newBufferedReader(Paths.get(BLACK_FRIDAY_CSV_LOCATION))) {
