@@ -2,6 +2,7 @@ import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 import pojos.BlackFridayPojo;
 import sortingalgorithms.InsertionSort;
+import sortingalgorithms.MergeSort;
 import sortingalgorithms.SelectionSort;
 
 import java.io.IOException;
@@ -25,7 +26,7 @@ public class CsvParser {
 
             InsertionSort<BlackFridayPojo> insertionSort = new InsertionSort<>();
             SelectionSort<BlackFridayPojo> selectionSort = new SelectionSort<>();
-
+            MergeSort<BlackFridayPojo> mergeSort = new MergeSort<>();
             long startTime = System.nanoTime();
             insertionSort.sort(data);
             long endTime = System.nanoTime();
